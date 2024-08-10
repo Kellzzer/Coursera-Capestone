@@ -1,7 +1,0 @@
-<Header/>
-
-<Nav/>
-
-<Main/>
-
-<Footer/>
