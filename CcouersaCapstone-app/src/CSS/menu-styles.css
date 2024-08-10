@@ -1,0 +1,140 @@
+/* --------------------------------------------------------- Image Banner --------------------------------------------------------- */
+main {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+#image-banner {
+    position: relative;
+    text-align: center;
+}
+
+/* --------------------------------------------------------- Photo Gallery --------------------------------------------------------- */
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.gallery-item {
+    width: 50%;
+    height: 50vh;
+}
+
+.gallery-image {
+    object-fit: cover;
+}
+
+.gallery-label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.option-label {
+    font-size: 3rem;
+}
+
+.option-description {
+    font-size: 1rem;
+}
+
+.option-price {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+/* --------------------------------------------------------- Menu --------------------------------------------------------- */
+#menu{
+    display: grid;
+    grid-template-areas: 
+                        "menu-title menu-title"
+                        "menu-1 menu-2";
+    column-gap: 4rem;
+    margin: 1rem 3rem;
+}
+
+#menu-title {
+    grid-area: menu-title;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.menu-section {
+    width: 45vw;
+}
+
+#menu-1 {
+    grid-area: menu-1;
+}
+
+#menu-2 {
+    grid-area: menu-2;
+}
+
+.menu-section article {
+    margin-bottom: 4rem;
+}
+
+.article-title {
+    color:#dcbc1f;
+    margin-bottom: 2rem;
+}
+
+.menu-entry {
+    margin-bottom: 1.5rem;
+}
+
+.menu-entry h3 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.25rem
+}
+
+.menu-entry p {
+    max-width: 80%;
+}
+
+/* --------------------------------------------------------- Responsive --------------------------------------------------------- */
+@media (max-width: 600px) {
+    #gallery {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin-bottom: 0rem;
+    }
+
+    .gallery-item {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .gallery-item:nth-child(3) {
+        order: 4;
+    }
+    .gallery-item:nth-child(4) {
+        order: 3;
+    }
+    .gallery-item:nth-child(7) {
+        order: 8;
+    }
+    .gallery-item:nth-child(8) {
+        order: 7;
+    }
+
+    #menu{
+        grid-template-areas: 
+                            "menu-title"
+                            "menu-1"
+                            "menu-2";
+        column-gap: 0rem;
+    }
+
+    .menu-section {
+        width: 90vw;
+    }
+}

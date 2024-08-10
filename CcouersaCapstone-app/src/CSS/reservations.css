@@ -1,0 +1,43 @@
+/* --------------------------------------------------------- Image Banner --------------------------------------------------------- */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#image-banner {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+/* --------------------------------------------------------- Reservations --------------------------------------------------------- */
+#reservation {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+}
+
+#reservation h2 {
+    font-size: 3rem;
+}
+
+#reservation p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+#hours h3 {
+    font-size: 1.5rem;
+}
+
+ul {
+    margin-left: 0rem;
+}
+
+ul li {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}

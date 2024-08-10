@@ -1,0 +1,63 @@
+/* --------------------------------------------------------- Image Banner --------------------------------------------------------- */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#image-banner {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+/* --------------------------------------------------------- Contact Form --------------------------------------------------------- */
+#contact-us {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 1rem 3rem;
+}
+
+#contact-us-form, #contact-info {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+#contact-us-form input, #contact-us-form textarea {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+}
+
+::placeholder {
+    opacity: 0.5;
+}
+
+/* --------------------------------------------------------- Contact Info --------------------------------------------------------- */
+#contact-info div {
+    margin-bottom: 1rem;
+}
+
+#contact-info ul {
+    padding-left: 0rem;
+}
+
+#contact-info li {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* --------------------------------------------------------- Responsive --------------------------------------------------------- */
+@media (max-width: 600px) {
+    #contact-us {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+        margin: 1% 3%;
+    }
+}
