@@ -1,0 +1,7 @@
+<Header/>
+
+<Nav/>
+
+<Main/>
+
+<Footer/>
